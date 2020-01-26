@@ -1,0 +1,277 @@
+body{
+    margin: 0;
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: black;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4{
+    margin: 0;
+}
+/*Container*/
+.container{
+    width: 100%;
+    max-width:1230px;
+    margin: 0 auto;
+
+}
+
+
+/*intro*/
+.intro{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../Images/turing.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+.intro_inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title{
+    font-size: 200px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1;
+   
+}
+    
+
+.intro_suptitle{
+    font-size: 40px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+   text-shadow: 
+		
+}
+
+
+/*header*/
+
+
+.header{
+    width: 100%;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header_logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+/*Links*/
+
+/* Это кнопка домой */
+.nav_mainlink{
+     display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav_mainlink:after{
+    content: "";
+    color: firebrick;
+    width: 100%;
+    height: 3px;
+    
+    background-color: firebrick;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left:0;
+    z-index: 1;
+    
+    transition: opacity 0.1s linear;
+    
+}
+/*Меню */
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+.nav_link:after{
+    content: "";
+    color: firebrick;
+    width: 100%;
+    height: 3px;
+    
+    background-color: firebrick;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left:0;
+    z-index: 1;
+    
+    transition: opacity 0.1s linear;
+}
+
+.nav_link:hover{
+    color: firebrick;
+}
+.nav_link:hover:after{
+   opacity: 1;
+}
+/*Button*/
+
+.section {
+    padding: 82px 0;
+}
+
+.section_header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px; 
+    text-align: center;
+    
+}
+
+.section_suptitle{
+    font-family: font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    color: black;
+}
+
+.section_title{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.section_title:after{
+    content:"";
+    display: block;
+    width: 220px;
+    height: 10px;
+    margin: 30px auto;
+    background-color: firebrick
+}
+
+.section_text{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: dimgrey;
+    text-align: left;
+    
+}
+/*Циатат */
+.phrase{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../Images/machine.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.phrase_inner{
+     width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align:left;
+}
+.author {
+    font-family: font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    color: white ;
+}
+.super_phrase{
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+}
+ 
+/*третья штука*/
+
+.picture_inf_header{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px; 
+    text-align: center;
+    
+}
+
+.picture_inf_suptittle{
+    font-family: font-family: 'Inconsolata', monospace;
+    font-size: 24px;
+    color: black;
+    margin: auto;
+}
+
+.picture_inf_tittle{
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 auto 40 px;
+}
+
+.picture_inf_tittle:after{
+    content:"";
+    display: block;
+    width: 220px;
+    height: 10px;
+    margin: 30px auto;
+    background-color: firebrick
+}
+
+
+.picture_text{
+     font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: dimgrey;
+    text-align: left;
+    
+}
+
+/*Для цветового выделения*/ 
+.text_color{
+    color: firebrick;
+}
